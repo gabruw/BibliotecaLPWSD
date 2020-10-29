@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/BibliotecaLPWSD">
+  <Resource auth="Container" factory="org.jboss.weld.resources.ManagerObjectFactory" name="BeanManager" type="javax.enterprise.inject.spi.BeanManager"/>
+  <Resource auth="Container" driverClassName="org.apache.derby.jdbc.ClientDriver" maxActive="20" maxIdle="10" maxWait="-1" name="bibliotecalpwsd" password="app" type="javax.sql.DataSource" url="jdbc:derby://localhost:1527/sample" username="app"/>
+</Context>

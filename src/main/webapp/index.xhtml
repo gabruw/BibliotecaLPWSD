@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="#{layoutMB.template}">
+    <ui:define name="title">
+        <p:spacer/>
+        <center>
+            <p:graphicImage value="/resources/images/cesjf.png"/>
+        </center>
+
+        <div style="padding: 3% 5%;">
+            <p:panelGrid columns="4" layout="grid" styleClass="showcase-text-align-center" columnClasses="ui-g-12 ui-md-6 ui-lg-3, ui-g-12 ui-md-6 ui-lg-3, ui-g-12 ui-md-6 ui-lg-3, ui-g-12 ui-md-6 ui-lg-3">
+                <p:fieldset legend="Assuntos" style="margin-bottom: 5px;">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <h:outputText
+                            value="#{homeBean.allAssuntoSize}" />
+                    </h:panelGrid>
+                </p:fieldset>
+
+                <p:fieldset legend="Autor" style="margin-bottom: 5px;">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <h:outputText
+                            value="#{homeBean.allAutorSize}" />
+                    </h:panelGrid>
+                </p:fieldset>
+
+                <p:fieldset legend="Livros" style="margin-bottom: 5px;">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <h:outputText
+                            value="#{homeBean.allLivroSize}" />
+                    </h:panelGrid>
+                </p:fieldset>
+
+                <p:fieldset legend="Exemplares" style="margin-bottom: 5px;">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <h:outputText
+                            value="#{homeBean.allExemplarSize}" />
+                    </h:panelGrid>
+                </p:fieldset>
+            </p:panelGrid>
+        </div>
+    </ui:define>
+</ui:composition>
